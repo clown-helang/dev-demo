@@ -1,0 +1,20 @@
+export default {
+  "common.home.header.userinfo": "UserInfo",
+  "common.home.header.change_passwd": "Change Password",
+  "common.home.header.logout": "Logout",
+  "common.home.header.logout.title": "Message Alert",
+  "common.home.header.logout.content": "Confirm To Logout?",
+  'common.home.header.menu.appManagement': 'App Management',
+  'common.home.header.menu.terminal_manage': 'Terminal Management',
+  "common.home.sider.menu.hotel_manage": "Hotel Management",
+  "common.home.sider.menu.GuestRoomManage": "GuestRoomManage",
+  "common.home.sider.menu.WelcomeMessage": "WelcomeMessage",
+  'common.home.header.menu.tenants_manage': 'Tenants Management',
+  'common.home.header.menu.mediaCapitalManagement': 'MediaCapital Management',
+  'common.home.header.menu.businessManagement': 'Business Management',
+  'common.home.header.menu.contentManagement': 'Content Management',
+  'common.home.header.menu.portalManagement': 'Portal Management',
+  'common.home.header.menu.information_manage': 'Information Management',
+  'common.home.header.menu.user_manage': 'User Management',
+  'common.home.header.menu.analyticsManagement': 'Analytics'
+}

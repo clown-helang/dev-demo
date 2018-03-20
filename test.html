@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            position: absolute;
+            top: 100px;
+            padding: 0 58px;
+            font-size: 20px;
+            color: #666666;
+            width:330px;
+            height:300px;
+            letter-spacing: 1.5px;
+            line-height: 30px;
+            text-align: justify;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;
+        }
+        .inner{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <div class="inner" id='inner'>
+        <div class="description" id="description">
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是一个很长很长很长的描述，这是一个很长很长很长的描述，
+            这是一个很长很长很长的描述，这是
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="application/javascript">
+
+    var wrapper = document.getElementById('wrapper');
+    var inner = document.getElementById('inner');
+    var description = document.getElementById('description');
+    var wrapper_H = wrapper.scrollHeight;
+    //wrapper.scrollTop += 1000;
+    console.log('wrapper.scrollHeight',wrapper.scrollHeight);
+    console.log('wrapper.scrollTop',wrapper.scrollTop);
+    console.log('inner.scrollHeight',inner.scrollHeight);
+    console.log('inner.scrollTop',inner.scrollTop);
+    console.log('description.scrollHeight',description.scrollHeight);
+    console.log('description.scrollTop',description.scrollTop);
+    console.log('wrapper.offsetHeight',wrapper.offsetHeight);
+
+    inner.style.height = description.scrollHeight + wrapper.offsetHeight + 'px';
+
+    function scrollFun() {
+        console.log(wrapper_H,wrapper.scrollTop);
+        if(wrapper_H > wrapper.scrollTop){
+            wrapper.scrollTop++;
+            setTimeout(scrollFun,10);
+        }else{
+            wrapper.scrollTop=0;
+            setTimeout(scrollFun,2000);
+        }
+    }
+
+    setTimeout('scrollFun()',2000)
+</script>
+</html>

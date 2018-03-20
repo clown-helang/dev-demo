@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "version": "2.8.0",
+  "scripts": {
+    "start": "node proxy-mp.js"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.10",
+    "open": "^0.0.5",
+    "opn": "^5.1.0"
+  }
+}
